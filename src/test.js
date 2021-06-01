@@ -9,7 +9,7 @@ const Test = () => {
     FB.getLoginStatus(function (response) {
       if (response.status === 'connected') {
         console.log(response.authResponse.accessToken);
-        setToken(accessToken)
+        setToken(response.authResponse.accessToken)
       }
       else
         FB.login()
