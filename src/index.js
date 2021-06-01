@@ -1,3 +1,10 @@
+import React from 'react';
+import { render } from 'react-dom';
+
+import Test from './test';
+
+render(<Test />, document.getElementById('root'));
+
 window.onload = () => {
   FB.getLoginStatus(function (response) {
     statusChangeCallback(response);
